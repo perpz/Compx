@@ -9,6 +9,7 @@ const Textarea = forwardRef(function Textarea(props, ref) {
       {...rest}
       borderRadius={'10px'}
       _focus={{
+        border: '1px solid',
         borderColor: 'primary',
         outline: 'none',
         boxShadow: 'none',
