@@ -57,7 +57,7 @@ function SwitchExamples() {
                 <FormLabel htmlFor="isDisabled" mb="0">
                   Enable Switch?
                 </FormLabel>
-                <Switch id="isDisabled" isDisabled defaultCkecked />
+                <Switch id="isDisabled" isDisabled defaultChecked />
               </FormControl>
             </Box>
           </Card>

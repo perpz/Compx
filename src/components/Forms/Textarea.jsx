@@ -1,24 +1,27 @@
 import React, { forwardRef } from 'react';
-import { PinInputField as ChakraPinInputField } from '@chakra-ui/react';
+import { Textarea as ChakraTextarea } from '@chakra-ui/react';
 
-const PinInputField = forwardRef(function PinInputField(props, ref) {
+const Textarea = forwardRef(function Textarea(props, ref) {
   const { ...rest } = props;
   return (
-    <ChakraPinInputField
+    <ChakraTextarea
       ref={ref}
       {...rest}
+      borderRadius={'10px'}
       _focus={{
         borderColor: 'primary',
         outline: 'none',
         boxShadow: 'none',
+        borderRadius: '10px',
       }}
       _hover={{
-        border: '1px solid #bbbbbb',
+        border: '1px solid #fff',
         outline: 'none',
         boxShadow: 'none',
+        borderRadius: '10px',
       }}
     />
   );
 });
 
-export default PinInputField;
+export default Textarea;

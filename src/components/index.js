@@ -11,3 +11,5 @@ export { default as PinInput } from './Forms/PinInput';
 export { default as Switch } from './Forms/Switch';
 export { default as Tag } from './Forms/Tag';
 export { default as PinInputField } from './Forms/PinInputField';
+export { default as Textarea } from './Forms/Textarea';
+export { default as Loader } from './Loader';

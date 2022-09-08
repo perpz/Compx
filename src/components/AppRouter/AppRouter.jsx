@@ -1,6 +1,6 @@
-import { Text } from '@chakra-ui/react';
 import React, { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { Loader } from 'src/components';
 
 const Home = lazy(() => import('src/screens/Home'));
 const NotFound = lazy(() => import('src/screens/NotFound'));
@@ -15,12 +15,15 @@ const LinkExamples = lazy(() => import('src/screens/Design/components/LinkExampl
 const PinInputExamples = lazy(() => import('src/screens/Design/components/PinInputExamples'));
 const SwitchExamples = lazy(() => import('src/screens/Design/components/SwitchExamples'));
 const TagExamples = lazy(() => import('src/screens/Design/components/TagExamples'));
+const TextareaExamples = lazy(() => import('src/screens/Design/components/TextareaExamples'));
+const Login = lazy(() => import('src/screens/Login'));
 
 export default function AppRouter() {
   return (
-    <Suspense fallback={<Text>Loading...</Text>}>
+    <Suspense fallback={<Loader />}>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
 
         <Route path="/components" element={<DesignLayout />}>
           <Route path="/components/home" index element={<DesignComponents />} />
@@ -33,9 +36,11 @@ export default function AppRouter() {
           <Route path="/components/pin-input" element={<PinInputExamples />} />
           <Route path="/components/switch" element={<SwitchExamples />} />
           <Route path="/components/tags" element={<TagExamples />} />
+          <Route path="/components/textarea" element={<TextareaExamples />} />
 
           <Route path="*" element={<NotFound />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>
   );

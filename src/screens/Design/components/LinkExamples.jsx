@@ -48,11 +48,12 @@ function LinkExamples() {
           </Heading>
           <Card alignItems="flex-start">
             <Box>
-              <Box>
-                <Text>
-                  Did you know that <Link href="#">links can live inline with text</Link>
-                </Text>
-              </Box>
+              <Text>
+                Did you know that{' '}
+                <Link display={'inline-block'} href="#">
+                  links can live inline with text
+                </Link>
+              </Text>
             </Box>
           </Card>
         </Box>
