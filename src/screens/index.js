@@ -7,3 +7,4 @@ export { default as InputExamples } from './Design/components/InputExamples';
 export { default as CheckboxExamples } from './Design/components/CheckboxExamples';
 export { default as RadioExamples } from './Design/components/RadioExamples';
 export { default as PinInputExamples } from './Design/components/PinInputExamples';
+export { default as Login } from './Login';

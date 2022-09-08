@@ -10,7 +10,7 @@ import {
   IoMdRadioButtonOn,
   IoMdSwitch,
 } from 'react-icons/io';
-import { BsInputCursor, BsTags, BsUnlock } from 'react-icons/bs';
+import { BsInputCursor, BsTags, BsUnlock, BsCardText } from 'react-icons/bs';
 import { Link } from 'src/components';
 
 const navLinks = [
@@ -24,6 +24,7 @@ const navLinks = [
   { id: 7, name: 'PinInput', icon: <BsUnlock />, path: '/components/pin-input' },
   { id: 8, name: 'Switch', icon: <IoMdSwitch />, path: '/components/switch' },
   { id: 9, name: 'Tags', icon: <BsTags />, path: '/components/tags' },
+  { id: 10, name: 'Textarea', icon: <BsCardText />, path: '/components/textarea' },
 ];
 
 function Layout() {
