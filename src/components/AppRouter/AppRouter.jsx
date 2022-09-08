@@ -18,7 +18,7 @@ const TagExamples = lazy(() => import('src/screens/Design/components/TagExamples
 
 export default function AppRouter() {
   return (
-    <Suspense fallback={<Text>loading....</Text>}>
+    <Suspense fallback={<Text>Loading...</Text>}>
       <Routes>
         <Route path="/" element={<Home />} />
 
